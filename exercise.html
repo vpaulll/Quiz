@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
 </head>
@@ -27,7 +28,16 @@
         
         <ol>
             <li>Delivery date filter for an application, that cannot select previous date past today's date.</li>
-            <!--ANWER HERE-->
+
+
+            <form action="#">
+                <div>
+                    <label for="date">Date</label><input type="date" min="2023-09-16" name="date" id="date">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+            
+            
 
             <!--END ANWER HERE-->
 
@@ -46,7 +56,25 @@
                         <li>Vietname</li>
                     </ul>
             <!--ANWER HERE--> 
-            
+            <form action="#">
+                <label for="Count">Southeast Asian Nations</label>
+                <select name="Countries" id="Count">
+                  <option value="Burma">Burma</option>
+                  <option value="Brunei">Brunei</option>
+                  <option value="Cambodia">Cambodia</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Laos">Laos</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Philippines" selected>Philippines</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Timor-Leste">Timor-Leste</option>
+                  <option value="Vietname">Vietname</option>
+                </select>
+                <input type="submit" value="Submit" />
+          </form>
+
+            </form>
             <!--END ANWER HERE-->
 
             <li>An input field for ingredients that can select one or more from the list:</li>
@@ -59,17 +87,50 @@
                     <li>Onion</li>
                 </ul>
             <!--ANWER HERE--> 
-            
+            <form id="form">
+                <p id=form-prompt>Ingredients</p>
+                <input type="checkbox" id="Fresh Celery" name="food" value="Fresh Celery">
+                <label for="child">Fresh Celery</label><br>
+                <input type="checkbox" id="Skim Milk" name="food" value="Skim Milk">
+                <label for="adult">Skim Milk</label><br>
+                <input type="checkbox" id="Turkey Celery" name="food" value="Turkey Celery">
+                <label for="senior">Turkey Celery</label><br>
+                <input type="checkbox" id="Butter" name="food" value="Butter">
+                <label for="senior">Butter</label><br>
+                <input type="checkbox" id="Carrots" name="food" value="Carrots">
+                <label for="senior">Carrots</label><br>
+                <input type="checkbox" id="Onion" name="food" value="Onion">
+                <label for="senior">Onion</label><br>
+                
+                <div><button type="submit">Submit</button></div>
+              </form>
             <!--END ANWER HERE--> 
 
             <li>An input field to select whether a user is an administrator or not? (Boolean)</li>    
             <!--ANWER HERE--> 
+            <form id="form">
+                <p id=form-prompt>Are you an administrator or not?</p>
+                <input type="radio" id="administrator" name="admin" value="administrator">
+                <label for="child">Administrator</label><br>
+                <input type="radio" id="notadministrator" name="admin" value="notadministrator">
+                <label for="adult">Not Administrator</label><br>
+                
+                <div><button type="submit">Submit</button></div>
+              </form>
+
+
+            </form>
             
             <!--END ANWER HERE-->  
 
             <li>An input field to upload one or more audio related files(like mp3, wav, ogg, m4a)</li>
             <!--ANWER HERE--> 
+            <form id="form">
+                <input type="file" name="Music Lover" id="Music Lover" accept=".mp3,.wav,.ogg,.m4a">
+                <div><button type="submit">Submit</button></div>
+            </form>
             
+
             <!--END ANWER HERE-->    
                 
 
@@ -99,6 +160,269 @@
             </tr>
         </table>
         <!--ANWER HERE--> 
+
+        <table style="background-color:white; color: black;border: 1px solid black; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th rowspan="2" style = "border: 1px solid black;background-color: azure;" >Time</th>
+                    <th colspan="6" style = "border: 1px solid black;background-color: azure;">Day of the Week</th>
+                </tr>
+    
+                <tr >
+                    <th style = "border: 1px solid black;background-color: azure;" >Monday</th>
+                    <th style = "border: 1px solid black;background-color: azure;">Tuesday</th>
+                    <th style = "border: 1px solid black;background-color: azure;">Wednesday</th>
+                    <th style = "border: 1px solid black;background-color: azure;">Thursday</th>
+                    <th style = "border: 1px solid black;background-color: azure;">Friday</th>
+                    <th style = "border: 1px solid black;background-color: azure;">Saturday</th>
+                    
+                </tr>
+            </thead>
+            
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">7:00 - 7:30</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td rowspan ="9" style= "border: 1px solid black;background-color: rgb(102, 95, 234);">PROJECT MGMT</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td rowspan ="6" style= "border: 1px solid black;background-color: rgb(221, 236, 113);">RDBMS</td>
+                    
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">7:30 - 8:00</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">8:00 - 8:30</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">8:30 - 9:00</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">9:00 - 9:30</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td rowspan ="5" style= "border: 1px solid black;background-color: rgb(99, 235, 172);">NETWORK MGMT</td>
+                    
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">9:30 - 10:00</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                    
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">10:00 - 10:30</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td rowspan ="3" style= "border: 1px solid black;background-color: rgb(188, 106, 246);">NETWORK MGMT</td>
+                    
+                    
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td rowspan ="5" style= "border: 1px solid black;background-color: rgb(243, 153, 57);">EVENT DRIVEN</td>
+                    
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">10:30 - 11:00</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                    
+                    
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">11:30 - 12:00</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                    
+                    
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">12:00 - 12:30</td>
+                    <td rowspan ="4" style= "border: 1px solid black;background-color: rgb(166, 148, 213);">RDBMS</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">12:30 - 1:00</td>
+                   
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">1:00 - 1:30</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td rowspan ="5" style= "border: 1px solid black;background-color: rgb(16, 39, 214);">WEB DEV</td>
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">1:30 - 2:00</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">2:00 - 2:30</td>
+                    <td rowspan ="4" style= "border: 1px solid black;background-color: rgb(221, 35, 202);">Event Driven</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">2:30 - 3:00</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">3:00 - 3:30</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">3:30 - 4:00</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">4:00 - 4:30</td>
+                    <td rowspan ="4" style= "border: 1px solid black;background-color: rgb(0, 255, 153);">WEB DEV</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">4:30 - 5:00</td>  
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"> </td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">5:00 - 5:30</td>                   
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">5:30 - 6:00</td>                    
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">6:00 - 6:30</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+
+                </tr>
+                <tr style = "border: 1px solid black;">
+            
+                    <td style = "border: 1px solid black;background-color: azure;">6:30 - 7:00</td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                    <td style = "border: 1px solid black;background-color: azure;"></td>
+                
+                </tr>                                                               
+        </table>
                 
         <!--END ANWER HERE-->
     </section>
